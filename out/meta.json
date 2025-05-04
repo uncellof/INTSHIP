@@ -1,0 +1,104 @@
+[
+    {
+        "class": "MGMT",
+        "documentation": "Management related",
+        "isRoot": false,
+        "min": "1",
+        "max": "1",
+        "parameters": [
+            {
+                "name": "BTS",
+                "type": "class"
+            }
+        ]
+    },
+    {
+        "class": "COMM",
+        "documentation": "Communication services",
+        "isRoot": false,
+        "min": "1",
+        "max": "1",
+        "parameters": [
+            {
+                "name": "BTS",
+                "type": "class"
+            }
+        ]
+    },
+    {
+        "class": "MetricJob",
+        "documentation": "Perfomance metric job",
+        "isRoot": false,
+        "min": "0",
+        "max": "100",
+        "parameters": [
+            {
+                "name": "isFinished",
+                "type": "boolean"
+            },
+            {
+                "name": "jobId",
+                "type": "uint32"
+            },
+            {
+                "name": "MGMT",
+                "type": "class"
+            }
+        ]
+    },
+    {
+        "class": "CPLANE",
+        "documentation": "Perfomance metric job",
+        "isRoot": false,
+        "min": "0",
+        "max": "1",
+        "parameters": [
+            {
+                "name": "MGMT",
+                "type": "class"
+            }
+        ]
+    },
+    {
+        "class": "RU",
+        "documentation": "Radio Unit hardware element",
+        "isRoot": false,
+        "min": "0",
+        "max": "42",
+        "parameters": [
+            {
+                "name": "hwRevision",
+                "type": "string"
+            },
+            {
+                "name": "id",
+                "type": "uint32"
+            },
+            {
+                "name": "ipv4Address",
+                "type": "string"
+            },
+            {
+                "name": "manufacturerName",
+                "type": "string"
+            },
+            {
+                "name": "HWE",
+                "type": "class"
+            }
+        ]
+    },
+    {
+        "class": "HWE",
+        "documentation": "Hardware equipment",
+        "isRoot": false,
+        "min": "1",
+        "max": "1",
+        "parameters": [
+            {
+                "name": "BTS",
+                "type": "class"
+            }
+        ]
+    }
+]
